@@ -15,22 +15,14 @@ import org.springframework.kafka.support.serializer.JsonSerializer;
 import in.ineuron.model.Customer;
 import in.ineuron.util.KafkaConstants;
 
-/**
- * 
- * @author Vicky
- *
- */
 @Configuration
 public class KafkaProduceConfig {
 
 	/**
-	 * This method is used to Kafka Producer Config details
-	 * 
-	 * @return
+	 * This method is used to Kafka Producer Configuration details
 	 */
-
 	@Bean
-	public ProducerFactory<String, Customer> producerFactory() {
+	ProducerFactory<String, Customer> producerFactory() {
 
 		Map<String, Object> configProps = new HashMap<String, Object>();
 
@@ -42,12 +34,10 @@ public class KafkaProduceConfig {
 	}
 
 	/**
-	 * This method is used to create KafkaTemplate bean obj
-	 * 
-	 * @return
+	 * This method is used to create KafkaTemplate bean object
 	 */
 	@Bean(name = "kafkaTemplate")
-	public KafkaTemplate<String, Customer> kafkaTemplate() {
+	KafkaTemplate<String, Customer> kafkaTemplate() {
 		return new KafkaTemplate<>(producerFactory());
 	}
 

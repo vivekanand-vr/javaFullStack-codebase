@@ -4,10 +4,8 @@ import java.util.List;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
-import in.ineuron.model.Address;
 import in.ineuron.model.StudentInfo;
 import in.ineuron.util.HibernateUtil;
 

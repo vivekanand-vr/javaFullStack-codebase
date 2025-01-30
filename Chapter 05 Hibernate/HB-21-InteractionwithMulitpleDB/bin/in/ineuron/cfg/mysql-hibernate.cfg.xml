@@ -6,9 +6,9 @@
 
 	<session-factory>
 		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-		<property name="hibernate.connection.url">jdbc:mysql:///student</property>
+		<property name="hibernate.connection.url">jdbc:mysql:///ineuron</property>
 		<property name="hibernate.connection.username">root</property>
-		<property name="hibernate.connection.password">#F3v7911</property>
+		<property name="hibernate.connection.password">root@123</property>
 
 		<!-- OPTIONAL PROPERTIES FOR HIBERNATE -->
 

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+  
+ <hibernate-mapping>  
+  <class name="in.ineuron.test.Employee" table="emp1000">  
+    <id name="id">  
+     <generator class="assigned"></generator>  
+    </id>  
+            
+    <property name="firstName"></property>  
+    <property name="lastName"></property>  
+            
+  </class>  
+            
+ </hibernate-mapping>  

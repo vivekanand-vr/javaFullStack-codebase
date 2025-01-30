@@ -10,13 +10,6 @@ import org.springframework.stereotype.Service;
 import in.ineuron.model.Customer;
 import in.ineuron.util.KafkaConstants;
 
-/**
- * This class is used to perform business operation
- * 
- * @author Vicky
- *
- */
-
 @Service("customerService")
 public class CustomerService {
 
@@ -25,16 +18,13 @@ public class CustomerService {
 
 	/**
 	 * This method is used to publish customer records as msgs to kafka topic
-	 * 
-	 * @param customers
-	 * @return
 	 */
 	public String add(List<Customer> customers) {
 
 		if (!customers.isEmpty()) {
 			for (Customer c : customers) {
 				kafkaTemplate.send(KafkaConstants.TOPIC, c);
-				System.out.println("************Msg published to Kafka topic***************");
+				System.out.println("************ Msg published to Kafka topic ***************");
 			}
 		}
 		return "Customer Records Added To Kafka Queue Successfully";
@@ -42,13 +32,10 @@ public class CustomerService {
 
 	/**
 	 * This method is used to consume messages from kafka topic
-	 * 
-	 * @param c
-	 * @return
 	 */
 	@KafkaListener(topics = KafkaConstants.TOPIC, groupId = KafkaConstants.GROUP_ID)
 	public Customer listener(Customer c) {
-		System.out.println("***Msg recieved from Kafka Topic ::" + c);
+		System.out.println("Message recieved from Kafka Topic ::" + c);
 		return c;
 	}
 

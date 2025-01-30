@@ -16,23 +16,16 @@ import org.springframework.kafka.support.serializer.JsonDeserializer;
 import in.ineuron.model.Customer;
 import in.ineuron.util.KafkaConstants;
 
-/**
- * 
- * @author Vicky
- *
- */
 
 @Configuration
 @EnableKafka
 public class KafkaListenerConfig {
 
 	/**
-	 * This method is used to Kafka Consumer Config details
-	 * 
-	 * @return
+	 * This method is used to Kafka Consumer Configuration details
 	 */
 	@Bean
-	public ConsumerFactory<String, Customer> consumerFactory() {
+	ConsumerFactory<String, Customer> consumerFactory() {
 		Map<String, Object> props = new HashMap<String, Object>();
 		props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, KafkaConstants.HOST);
 		props.put(ConsumerConfig.GROUP_ID_CONFIG, KafkaConstants.GROUP_ID);
@@ -44,7 +37,7 @@ public class KafkaListenerConfig {
 	}
 
 	@Bean
-	public ConcurrentKafkaListenerContainerFactory<String, Customer> kafkaListenerContainerFactory() {
+	ConcurrentKafkaListenerContainerFactory<String, Customer> kafkaListenerContainerFactory() {
 		ConcurrentKafkaListenerContainerFactory<String, Customer> factory = new ConcurrentKafkaListenerContainerFactory<String, Customer>();
 		factory.setConsumerFactory(consumerFactory());
 		return factory;
