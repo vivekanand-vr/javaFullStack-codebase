@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>JSP 05 - ELApp</display-name>
+  <context-param>
+    <param-name>user</param-name>
+    <param-value>root</param-value>
+  </context-param>
+  <context-param>
+    <param-name>pwd</param-name>
+    <param-value>root123</param-value>
+  </context-param>
+</web-app>

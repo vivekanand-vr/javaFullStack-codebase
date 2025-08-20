@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="dob" class="java.util.Date" p:date="24" p:month="3"
+		p:year="73" />
+
+	<bean id="doj" class="java.util.Date" />
+
+	<bean id="employee" class="in.ineuron.comp.Employee" p:eno="10"
+		p:ename="sachin" p:dob-ref="dob" p:dept-ref="dept" />
+
+
+	<bean id="dept" class="in.ineuron.comp.Department" c:dno="100">
+		<constructor-arg name="dname" value="CSE" />
+		<constructor-arg name="doj" ref="doj" />
+	</bean>
+</beans>

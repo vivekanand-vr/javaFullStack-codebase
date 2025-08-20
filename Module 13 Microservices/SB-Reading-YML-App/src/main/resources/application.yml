@@ -1,0 +1,8 @@
+demo:
+  properties:
+    greetMsg: Hi, Good Morning
+    testMsg: This is test Message
+    welcomeMsg: Welcome to Vivek's Arena
+    
+server:
+  port: 9999

@@ -1,0 +1,45 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql:///octbatch</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root123</property>
+
+		<!-- OPTIONAL PROPERTIES FOR HIBERNATE -->
+
+		<!-- Prepare the query based on the mapping information for the underlying 
+			DATABASE -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+		<!--Inform HIBERNATE to display the query on the console it has generated 
+			internally -->
+		<property name="hibernate.show_sql">true</property>
+
+
+		<!--Inform HIBERNATE to display the query on the console it has generated 
+			internally in proper format -->
+		<property name="hibernate.format_sql">true</property>
+
+		<!-- Inform HIBERNATE to create/alter/drop the table -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		<!-- Connection provider to work with HIKARICP -->
+		<property name="connection.provider_class">org.hibernate.hikaricp.internal.HikariCPConnectionProvider</property>
+
+				<!-- HikariCP settings -->
+		<property name="hikari.connectionTimeout">50000</property>
+		<property name="hibernate.hikari.minimumIdle">10</property>
+		<property name="hibernate.hikari.maximumPoolSize">20</property>
+		<property name="hibernate.hikari.idleTimeout">30000</property>
+		
+	</session-factory>
+
+</hibernate-configuration>
+
+
+

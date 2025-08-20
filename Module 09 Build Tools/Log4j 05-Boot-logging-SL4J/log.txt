@@ -1,0 +1,9 @@
+in.ineuron.BootLoggingUsingLog4jApplication 561 main  INFO  Starting BootLoggingUsingLog4jApplication using Java 1.8.0_202 on DESKTOP-1N5U4UJ with PID 23548 (D:\EclipseMavenPrograms\Boot-logging-using-Log4j\target\classes started by nitin in D:\EclipseMavenPrograms\Boot-logging-using-Log4j) 2023-04-14 22:27:33,033  
+in.ineuron.BootLoggingUsingLog4jApplication 564 main  INFO  No active profile set, falling back to 1 default profile: "default" 2023-04-14 22:27:33,036  
+in.ineuron.BootLoggingUsingLog4jApplication 1636 main  INFO  Started BootLoggingUsingLog4jApplication in 1.481 seconds (JVM running for 2.272) 2023-04-14 22:27:34,108  
+in.ineuron.beans.Student 1643 main  DEBUG  control entering inside Student :: preparation(,) 2023-04-14 22:27:34,115  
+in.ineuron.beans.UICourseMaterial 1657 main  DEBUG  control entering inside UICourseMaterial :: courseContent 2023-04-14 22:27:34,129  
+in.ineuron.beans.Student 1658 main  INFO  Course content is choosen :: 1.HTML 2.CSS 3.JavaScript 2023-04-14 22:27:34,130  
+in.ineuron.beans.Student 1659 main  INFO  Course price is ready :: 500.0 2023-04-14 22:27:34,131  
+in.ineuron.beans.Student 1659 main  DEBUG  control exiting from Student :: prepartion(,) 2023-04-14 22:27:34,131  
+ 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="dtdc" class="in.ineuron.comp.DTDC"
+		autowire-candidate="false" primary="true"/>
+		
+	<bean id="bDart" class="in.ineuron.comp.BlueDart"
+		autowire-candidate="false" />
+		
+	<bean id="fFlight" class="in.ineuron.comp.FirstFlight" autowire-candidate="false"/>
+
+	<!-- Configuring the Target bean -->
+	<bean id="fpkt" class="in.ineuron.comp.Flipkart" autowire="no">
+		<constructor-arg name="discount" value="10" />
+		<constructor-arg name="courier" ref="fFlight"/>	
+	</bean>
+</beans>

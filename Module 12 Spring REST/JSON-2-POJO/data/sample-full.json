@@ -1,0 +1,15 @@
+{
+	"id": 10,
+	"firstName": "Sachin",
+	"lastName": "Tendulkar",
+	"active": true,
+	"address": {
+		"street": "25/1",
+		"city": "Mumbai",
+		"state": "Maharashtra",
+		"zip": "560026",
+		"country": "IND"
+	},
+	"languages" : ["Java", "C#", "Python", "Javascript"],
+	"Company":"MI"	
+}

@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [14/Mar/2024:15:44:45 +0530] "GET /WishMsgApp HTTP/1.1" 302 - http-bio-9999-exec-1 0
+0:0:0:0:0:0:0:1 - - [14/Mar/2024:15:44:45 +0530] "GET /WishMsgApp/ HTTP/1.1" 200 210 http-bio-9999-exec-3 69
+0:0:0:0:0:0:0:1 - - [14/Mar/2024:15:44:45 +0530] "GET /favicon.ico HTTP/1.1" 404 - http-bio-9999-exec-4 0
+0:0:0:0:0:0:0:1 - - [14/Mar/2024:15:44:48 +0530] "GET /WishMsgApp/wish HTTP/1.1" 500 2005 http-bio-9999-exec-5 8
+0:0:0:0:0:0:0:1 - - [14/Mar/2024:15:52:16 +0530] "GET /WishMsgApp/ HTTP/1.1" 200 210 http-bio-9999-exec-1 51
+0:0:0:0:0:0:0:1 - - [14/Mar/2024:15:52:17 +0530] "GET /WishMsgApp/wish HTTP/1.1" 200 227 http-bio-9999-exec-3 3

@@ -1,0 +1,23 @@
+2024-03-17 23:26:39 INFO ernate.orm.connections.pooling buildCreator in.pwskills.GetRecordApp.main() 467 119  HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql:///ineuron]
+2024-03-17 23:26:39 INFO ernate.orm.connections.pooling buildCreator in.pwskills.GetRecordApp.main() 467 128  HHH10001001: Connection properties: {password=****, user=root}
+2024-03-17 23:26:39 INFO ernate.orm.connections.pooling buildCreator in.pwskills.GetRecordApp.main() 467 132  HHH10001003: Autocommit mode: false
+2024-03-17 23:26:39 INFO rManagerConnectionProviderImpl     <init> in.pwskills.GetRecordApp.main() 469 322  HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-03-17 23:26:40 INFO       org.hibernate.dialect.Dialect     <init> in.pwskills.GetRecordApp.main() 775 175  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-17 23:26:40 INFO bernate.orm.connections.access getIsolatedConnection in.pwskills.GetRecordApp.main() 1229 48  HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2d637aa8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-03-17 23:26:40 INFO .internal.JtaPlatformInitiator initiateService in.pwskills.GetRecordApp.main() 1285 52  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-17 23:26:40 INFO            in.pwskills.GetRecordApp       main in.pwskills.GetRecordApp.main() 1348 21  session object created...
+2024-03-17 23:26:40 INFO            in.pwskills.GetRecordApp       main in.pwskills.GetRecordApp.main() 1381 26  in.pwskills.model.Student@692c92ac
+2024-03-17 23:26:40 INFO ernate.orm.connections.pooling       stop in.pwskills.GetRecordApp.main() 1383 550  HHH10001008: Cleaning up connection pool [jdbc:mysql:///ineuron]
+2024-03-17 23:29:45 INFO               org.hibernate.Version logVersion main       0 44  HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-17 23:29:45 INFO ate.annotations.common.Version   <clinit> main       438 56  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-17 23:29:45 WARN ernate.orm.connections.pooling  configure main       596 75  HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-03-17 23:29:45 INFO ernate.orm.connections.pooling buildCreator main       601 119  HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql:///ineuron]
+2024-03-17 23:29:45 INFO ernate.orm.connections.pooling buildCreator main       602 128  HHH10001001: Connection properties: {password=****, user=root}
+2024-03-17 23:29:45 INFO ernate.orm.connections.pooling buildCreator main       602 132  HHH10001003: Autocommit mode: false
+2024-03-17 23:29:45 INFO rManagerConnectionProviderImpl     <init> main       604 322  HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-03-17 23:29:46 INFO       org.hibernate.dialect.Dialect     <init> main       989 175  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-17 23:29:46 INFO bernate.orm.connections.access getIsolatedConnection main       1430 48  HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c20cdd0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-03-17 23:29:46 INFO .internal.JtaPlatformInitiator initiateService main       1493 52  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-17 23:29:46 INFO            in.pwskills.GetRecordApp       main main       1538 21  session object created...
+2024-03-17 23:29:46 INFO            in.pwskills.GetRecordApp       main main       1558 26  in.pwskills.model.Student@73afe2b7
+2024-03-17 23:29:46 INFO ernate.orm.connections.pooling       stop main       1560 550  HHH10001008: Cleaning up connection pool [jdbc:mysql:///ineuron]

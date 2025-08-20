@@ -1,0 +1,42 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql:///ineuron</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root@123</property>
+
+		<!-- OPTIONAL PROPERTIES FOR HIBERNATE -->
+
+		<!-- Prepare the query based on the mapping information for the underlying 
+			DATABASE -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+		<!--Inform HIBERNATE to display the query on the console it has generated 
+			internally -->
+		<property name="hibernate.show_sql">true</property>
+
+
+		<!--Inform HIBERNATE to display the query on the console it has generated 
+			internally in proper format -->
+		<property name="hibernate.format_sql">true</property>
+
+		<!-- Inform HIBERNATE to create/alter/drop the table -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+							<!-- For each cache -->
+		<property name="cache.use_second_level_cache">true</property>
+		<property name="net.sf.ehcache.configurationResourceName">ehcache.xml</property>
+		<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+		<property name="hibernate.cache.use_query_cache">true</property>
+		
+	</session-factory>
+
+</hibernate-configuration>
+
+
+

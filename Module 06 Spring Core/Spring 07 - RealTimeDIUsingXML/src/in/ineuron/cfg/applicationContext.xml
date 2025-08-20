@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Setter Injection to get DataSource Object -->
+	<bean id ="mysqlDAO" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+		<property name="url" value="jdbc:mysql:///ineuron"/>
+		<property name="username" value="root"/>
+		<property name="password" value="root@123"/>
+	</bean>
+	
+	<!-- Constructor Injection inside DAO layer -->
+	<bean id="customerDao" class="in.ineuron.dao.CustomerMySQLDAOImpl">
+			<constructor-arg name="dataSource" ref="mysqlDAO"/>
+	</bean>
+	
+	<!-- Constructor Injection inside Service layer -->
+	<bean id="customerService" class="in.ineuron.service.CustomerMgmtServiceImpl">
+		<constructor-arg name="dao" ref="customerDao"/>
+	</bean>
+	
+	<!-- Constructor Injection inside Controller layer -->
+	<bean id="customerController" class="in.ineuron.controller.MainController">
+		<constructor-arg name="service" ref="customerService"/>
+	</bean>
+	
+</beans>

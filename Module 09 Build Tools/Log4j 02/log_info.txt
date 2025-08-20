@@ -1,0 +1,12 @@
+2023-04-10 20:33:36 DEBUG ineuron.JdbcApp       main main       0 22  Control entering main()
+2023-04-10 20:33:36 DEBUG ineuron.JdbcApp       main main       61 29  Driver Loaded succesfully
+2023-04-10 20:33:36 INFO ineuron.JdbcApp       main main       933 35  Connection established succesfully
+2023-04-10 20:33:36 DEBUG ineuron.JdbcApp       main main       939 38  Statement object created
+2023-04-10 20:33:36 INFO ineuron.JdbcApp       main main       968 42  ResultSet object created by executing query
+2023-04-10 20:33:36 DEBUG ineuron.JdbcApp       main main       973 83  Control exiting main()
+2023-04-10 20:33:54 DEBUG ineuron.JdbcApp       main main       0 22  Control entering main()
+2023-04-10 20:33:54 DEBUG ineuron.JdbcApp       main main       71 29  Driver Loaded succesfully
+2023-04-10 20:33:55 INFO ineuron.JdbcApp       main main       949 35  Connection established succesfully
+2023-04-10 20:33:55 DEBUG ineuron.JdbcApp       main main       953 38  Statement object created
+2023-04-10 20:33:55 INFO ineuron.JdbcApp       main main       968 42  ResultSet object created by executing query
+2023-04-10 20:33:55 DEBUG ineuron.JdbcApp       main main       970 83  Control exiting main()

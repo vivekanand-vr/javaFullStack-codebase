@@ -1,0 +1,57 @@
+{"properties": [
+  {
+    "name": "emp.info.company.location",
+    "type": "java.lang.String",
+    "description": "A description for 'emp.info.company.location'"
+  },
+  {
+    "name": "emp.info.company.size",
+    "type": "java.lang.String",
+    "description": "A description for 'emp.info.company.size'"
+  },
+  {
+    "name": "emp.info.company.title",
+    "type": "java.lang.String",
+    "description": "A description for 'emp.info.company.title'"
+  },
+  {
+    "name": "emp.info.id",
+    "type": "java.lang.String",
+    "description": "A description for 'emp.info.id'"
+  },
+  {
+    "name": "emp.info.id-details.adhar-no",
+    "type": "java.lang.String",
+    "description": "A description for 'emp.info.id-details.adhar-no'"
+  },
+  {
+    "name": "emp.info.id-details.pan-no",
+    "type": "java.lang.String",
+    "description": "A description for 'emp.info.id-details.pan-no'"
+  },
+  {
+    "name": "emp.info.id-details.voterid",
+    "type": "java.lang.String",
+    "description": "A description for 'emp.info.id-details.voterid'"
+  },
+  {
+    "name": "emp.info.name",
+    "type": "java.lang.String",
+    "description": "A description for 'emp.info.name'"
+  },
+  {
+    "name": "emp.info.phone-numbers",
+    "type": "java.lang.String",
+    "description": "A description for 'emp.info.phone-numbers'"
+  },
+  {
+    "name": "emp.info.skills",
+    "type": "java.lang.String",
+    "description": "A description for 'emp.info.skills'"
+  },
+  {
+    "name": "emp.info.team-members",
+    "type": "java.lang.String",
+    "description": "A description for 'emp.info.team-members'"
+  }
+]}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="sysDate" class="java.util.Date" />
+	<bean id="dob" class="java.util.Date">
+		<property name="year" value="93" />
+		<property name="month" value="0" />
+		<property name="date" value="03" />
+	</bean>
+
+	<bean id="marks" class="in.ineuron.comp.MarksInfo">
+		<property name="marksInfo">
+			<array>
+				<value>100</value>
+				<value>97</value>
+				<value>98</value>
+				<value>35</value>
+			</array>
+		</property>
+	</bean>
+
+	<bean id="clg" class="in.ineuron.comp.College">
+		<property name="studNames">
+			<list>
+				<value>sachin</value>
+				<value>saurav</value>
+				<value>dravid</value>
+				<value>laxman</value>
+			</list>
+		</property>
+		<property name="dateList">
+			<list>
+				<ref bean="sysDate" />
+				<ref bean="dob" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="contact" class="in.ineuron.comp.ContactsInfo">
+		<property name="phoneNumbers">
+			<set value-type="java.lang.Long">
+				<value>9999999999</value>
+				<value>8888888888</value>
+				<value>7777777777</value>
+				<value>7777777777</value>
+			</set>
+		</property>
+		<property name="dates">
+			<set>
+				<ref bean="sysDate" />
+				<ref bean="dob" />
+			</set>
+		</property>
+	</bean>
+
+	<bean id="uInfo" class="in.ineuron.comp.UniversityInfo">
+		<property name="facultyDetails">
+			<map key-type="java.lang.Integer" value-type="java.lang.String">
+				<entry>
+					<key>
+						<value>10</value>
+					</key>
+					<value>sachin</value>
+				</entry>
+				<entry key="7" value="dhoni" />
+				<entry key="18" value="kohli" />
+			</map>
+		</property>
+		<property name="datesInfo">
+			<map key-type="java.lang.String" value-type="java.util.Date">
+				<entry>
+					<key>
+						<value>toDay</value>
+					</key>
+					<ref bean="sysDate" />
+				</entry>
+				<entry key="dob" value-ref="dob"/>
+			</map>
+		</property>
+		
+		<property name="iplInfo">
+			<props>
+				<prop key="RCB">FAF</prop>
+				<prop key="MI">Rohith</prop>
+				<prop key="CSK">Dhoni</prop>
+				<prop key="LSG">Rahul</prop>
+				<prop key="GT">Pandya</prop>
+				<prop key="KKR">Iyer</prop>
+			</props>
+		</property>
+		
+		
+	</bean>
+</beans>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Servlet 22 - ValidationFilterApp</display-name>
+  <servlet>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <servlet-class>in.ineuron.controller.RegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <url-pattern>/reg</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>ValidationFilter</display-name>
+    <filter-name>ValidationFilter</filter-name>
+    <filter-class>in.ineuron.filter.ValidationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>ValidationFilter</filter-name>
+    <url-pattern>/reg</url-pattern>
+  </filter-mapping>
+</web-app>

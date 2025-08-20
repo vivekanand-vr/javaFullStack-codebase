@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Information Form</title>
+<style>
+  body {
+    background-color: lightblue;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 30%;
+    margin: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+
+  input[type="text"], input[type="submit"] {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: px 0;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+	<br/>
+	
+  <form method="post" action="./controller/addform">
+    <table align='center'>
+      <tr>
+        <th colspan="4", align="center">STUDENT INFORMATION</th>
+      </tr>
+      <tr>
+        <td>Student Age</td>
+        <td><input type="text" name='sage' /></td>
+      </tr>
+      <tr>
+        <td>Student Name</td>
+        <td><input type="text" name='sname' /></td>
+      </tr>
+      <tr>
+        <td>Student Address</td>
+        <td><input type="text" name='saddr' /></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value='Save' /></td>
+      </tr>
+    </table>
+  </form>
+  
+  
+</body>
+</html>

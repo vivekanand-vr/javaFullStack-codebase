@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+        
+    <wb-module deploy-name="JSP 04 - ScopeApp">
+                
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+                
+        <property name="java-output-path" value="/JSP 04 - ScopeApp/build/classes"/>
+        <property name="context-root" value="JSP 04 - ScopeApp"/>
+            
+    </wb-module>
+    
+</project-modules>

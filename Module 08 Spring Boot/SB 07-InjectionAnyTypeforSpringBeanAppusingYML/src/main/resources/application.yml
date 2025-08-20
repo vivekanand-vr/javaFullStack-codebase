@@ -1,0 +1,25 @@
+emp:
+  info:
+    company:
+      location: Delhi
+      size: 5000
+      title: PW Skills
+    id: 10
+    id-details:
+      adharNo: 55566765
+      panNo: 2321234
+      voterid: 44323456
+    name: sachin
+    phone-numbers:
+    - 9998887776
+    - 6667778885
+    - 4445556667
+    skills:
+    - java
+    - jee
+    - ORM
+    - SpringBoot
+    team-members:
+    - sauav
+    - dravid
+    - yuvraj

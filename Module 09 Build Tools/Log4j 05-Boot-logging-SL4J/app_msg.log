@@ -1,0 +1,5 @@
+2024-03-17 20:29:59 INFO  Starting BootLoggingUsingLog4jApplication using Java 17.0.8 on LAPTOP-G3NN0GHP with PID 12548 (V:\Java Programs\Maven Examples\Boot-logging-using-SL4J-Log4j2\target\classes started by Asus in V:\Java Programs\Maven Examples\Boot-logging-using-SL4J-Log4j2)
+2024-03-17 20:29:59 INFO  No active profile set, falling back to 1 default profile: "default"
+2024-03-17 20:29:59 INFO  Started BootLoggingUsingLog4jApplication in 0.816 seconds (JVM running for 1.495)
+2024-03-17 20:29:59 INFO  Course content is choosen :: 1.HTML 2.CSS 3.JavaScript
+2024-03-17 20:29:59 INFO  Course price is ready :: 500.0

@@ -1,0 +1,31 @@
+{
+	"cno": 10,
+	"cname": "sachin",
+	"billAmount": 54.5,
+	"teamNames": [
+		"IND",
+		"MI",
+		"AsiaXI",
+		"Mumbai"
+	],
+	"studies": [
+		"10th",
+		"12th",
+		"Engineering"
+	],
+	"phoneNumbers": [
+		98765678,
+		994349845,
+		9994445556
+	],
+	"idDetails": {
+		"panNo": "DOOPQRCL12",
+		"adhar": 99453123432
+	},
+	"company": {
+		"cname": "MI",
+		"ctype": "IPL",
+		"cddress": "Mumbai",
+		"size": 45
+	}
+}

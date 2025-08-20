@@ -1,0 +1,34 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>
+		<property name="hibernate.connection.username">System</property>
+		<property name="hibernate.connection.password">root123</property>
+
+		<!-- OPTIONAL PROPERTIES FOR HIBERNATE -->
+
+		<!-- Prepare the query based on the mapping information for the underlying DATABASE -->
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+
+		<!--Inform HIBERNATE to display the query on the console it has generated 
+			internally -->
+		<property name="hibernate.show_sql">true</property>
+
+
+		<!--Inform HIBERNATE to display the query on the console it has generated 
+			internally in proper format -->
+		<property name="hibernate.format_sql">true</property>
+		<!-- Inform HIBERNATE to create/alter/drop the table -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+	</session-factory>
+
+</hibernate-configuration>
+
+
+
